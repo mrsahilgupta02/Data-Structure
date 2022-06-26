@@ -4,15 +4,16 @@ int main()
 {
     deque<int>dq={10,15,30,5,12};
     auto it=dq.begin();
-    it++;
+    //it++;
     dq.insert(it,20);
-    dq.pop_front();
-    dq.pop_back();
-    cout<<dq.size()<<endl;
     for(auto it:dq)
     {
         cout<<it<<" ";
     }
+    dq.pop_front();
+    dq.pop_back();
+    cout<<dq.size()<<endl;
+    
     return 0;
 
 }
